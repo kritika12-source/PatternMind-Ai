@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "PatternMind AI",
+  "version": "0.1.0",
+  "description": "AI-powered adaptive coding mentor.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*"
+  ],
+  "action": {
+    "default_title": "Open PatternMind AI"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+ "content_scripts": [
+  {
+    "matches": [
+      "https://leetcode.com/*"
+    ],
+    "js": [
+      "content.js"
+    ],
+    "run_at": "document_idle"
+  },
+  {
+    "matches": [
+      "https://leetcode.com/*"
+    ],
+    "js": [
+      "page-bridge.js"
+    ],
+    "run_at": "document_idle",
+    "world": "MAIN"
+  }
+]
+}
