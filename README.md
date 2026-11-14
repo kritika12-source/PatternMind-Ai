@@ -1,132 +1,136 @@
+<div align="center">
+
 # PatternMind AI
+
 ### Your Personal AI Coding Mentor
 
-**Think Better. Debug Smarter. Solve Independently.**
+**Think Better · Debug Smarter · Solve Independently**
 
-<p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\01-patternmind-banner.png",
-"docs/images/01-patternmind-banner.png" alt="PatternMind AI project banner" width="100%">
+<img src="docs/images/01-patternmind-banner.png" alt="PatternMind AI banner" width="100%">
+
+<p>
+  An AI-powered Chrome extension that helps learners reason through LeetCode problems,
+  inspect their code, and learn from mistakes instead of jumping straight to an answer.
 </p>
 
-<p align="center">
-  An AI-powered Chrome extension designed to help developers improve their problem-solving skills while practicing on LeetCode.
-</p>
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black" alt="React">
   <img src="https://img.shields.io/badge/TypeScript-Frontend-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=nodedotjs&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Express.js-API-000000?logo=express" alt="Express">
+  <img src="https://img.shields.io/badge/Express-API-000000?logo=express" alt="Express">
   <img src="https://img.shields.io/badge/Google-Gemini%20API-4285F4?logo=google" alt="Gemini API">
-  <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Extension">
+  <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome extension">
 </p>
 
 ---
 
-## About
+## What is PatternMind AI?
 
-Learning to code is not just about getting the correct output. It is about understanding the logic behind a solution, recognizing mistakes, and learning how to approach similar problems in the future.
+PatternMind AI is a Chrome extension built to support problem-solving practice on LeetCode. It brings AI guidance alongside the coding workflow and is designed to help learners understand *where* their reasoning needs attention and *why* a particular approach may fail.
 
-PatternMind AI is built around that idea. It works alongside the LeetCode practice environment and provides AI-powered guidance based on the current problem and the code being written. Instead of immediately giving away a complete solution, it aims to help learners think through a problem and improve their own approach.
+The focus is guided learning: hints are delivered progressively, code can be reviewed through logic analysis, and useful problem-solving experiences can be saved as learning memory.
 
-## What it does
+## At a glance
 
-### Progressive AI hints
+- **Progressive hints:** staged guidance from a nudge toward more specific help.
+- **Logic analysis:** an explanation of execution and potential logic issues.
+- **Code dry run:** a step-by-step view of how code and variables behave.
+- **Learning memory:** a place to retain useful problem-solving notes.
+- **LeetCode integration:** detects the active problem and works alongside the practice page.
 
-PatternMind uses a staged hint approach so learners can ask for as much guidance as they need without jumping straight to a complete solution.
+## See it in action
 
-| Level | Guidance |
-|---|---|
-| H1 | Helps identify where to focus |
-| H2 | Points towards a relevant concept |
-| H3 | Connects the problem with previous learning when a meaningful connection exists |
-| H4 | Suggests a next construction step |
-| H5 | Offers limited code-level assistance |
+### Extension dashboard and current problem
+
+The extension displays the detected problem, current code, and actions for requesting a hint or analysing logic.
+
+<p align="center">
+  <img src="docs/images/02-extension-dashboard-and-hint.png" alt="PatternMind AI extension showing current code, hint and logic analysis" width="390">
+</p>
 
 ### Logic analysis
 
-The logic-analysis feature reviews the student's current code and helps explain possible logical mistakes, incorrect assumptions, and edge cases. It should distinguish an actual logic failure from a potential weakness rather than inventing an error.
-
-### Code dry run
-
-The dry-run experience helps learners follow execution step by step, understand variable changes, and see where a logic issue may occur.
-
-### Learning memory
-
-PatternMind can retain learning information such as saved problems, approaches, patterns, concepts, mistakes, and takeaways. This information can be used to make later guidance more relevant.
-
-### LeetCode integration
-
-The extension is designed to detect the current LeetCode problem and collect relevant coding information for the assistant. LeetCode Practice History synchronization should be described as complete only after it has been verified end-to-end.
-
-## Interface preview
-
-### Main extension view
+The following captures show the execution trace and explanation sections produced by the logic-analysis experience.
 
 <p align="center">
-  <img src= "C:\Users\k3475\OneDrive\Ai chrome extension\02-dashboard.png",
-"docs/images/02-dashboard.png" alt="PatternMind AI showing learning memories and a detected LeetCode problem" width="380">
+  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230639.png" alt="Logic analysis execution trace" width="390">
 </p>
-
-The screenshot shows the extension displaying the learning-memory count, detected problem title and difficulty, and the problem description.
-
-### Code panel and actions
 
 <p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\03-code-and-actions.png",
-"docs/images/03-code-and-actions.png alt="PatternMind AI current code panel and analysis and hint actions" width="380">
+  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230832.png" alt="Logic analysis explanation and thinking question" width="390">
 </p>
 
-The code panel displays the detected programming language and current code, with actions to analyze logic and request a hint.
+### Progressive hints
 
-## How it works
+Hints are designed to reveal guidance in stages, helping the learner keep ownership of the solution.
+
+**Hint Level 1 — Where should I look?**
+
+<p align="center">
+  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230843.png" alt="PatternMind AI Hint Level 1" width="390">
+</p>
+
+**Hint Level 2 — What concept should I think about?**
+
+<p align="center">
+  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230916.png" alt="PatternMind AI Hint Level 2" width="390">
+</p>
+
+**Hint Level 5 — Small code help**
+
+<p align="center">
+  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230946.png" alt="PatternMind AI Hint Level 5" width="390">
+</p>
+
+> These are screenshots from the current development build. AI analysis and hint quality depend on the submitted problem and code; outputs should be reviewed as part of testing.
+
+## How the workflow fits together
 
 ```mermaid
 flowchart TD
-    A[Open a LeetCode problem] --> B[Chrome extension detects problem]
-    B --> C[Collect problem and code context]
-    C --> D[PatternMind interface]
-    D --> E[Node.js and Express backend]
-    E --> F[Gemini API]
-    F --> G[Process AI response]
-    G --> H[Progressive hints]
-    G --> I[Logic analysis]
-    G --> J[Code dry run]
-    H --> K[Review guidance]
-    I --> K
-    J --> K
-    K --> L[Save useful learning]
+    A["Open a LeetCode problem"] --> B["Extension detects problem context"]
+    B --> C["Read current code"]
+    C --> D["Choose an assistance feature"]
+    D --> E["Progressive hint"]
+    D --> F["Logic analysis"]
+    D --> G["Code dry run"]
+    E --> H["Review guidance"]
+    F --> H
+    G --> H
+    H --> I["Revise code and keep learning"]
 ```
 
 ## System architecture
 
 ```mermaid
 flowchart TD
-    A[LeetCode website] <--> B[Chrome extension]
-    B --> C[React and TypeScript UI]
-    C --> D[Node.js and Express API]
-    D --> E[Prompt and context handling]
-    E <--> F[Google Gemini API]
-    F --> G[AI response]
+    A["LeetCode page"] <--> B["Chrome extension scripts"]
+    B --> C["React + TypeScript interface"]
+    C --> D["Node.js + Express backend"]
+    D --> E["Prompt and context handling"]
+    E <--> F["Google Gemini API"]
+    F --> G["AI response"]
     G --> C
-    C <--> H[Chrome local storage / learning memory]
+    C <--> H["Chrome local storage"]
 ```
 
 ## Technology
 
 | Technology | Role |
 |---|---|
-| React | User interface |
-| TypeScript | Frontend development |
-| Vite | Development server and build tooling |
+| React | Extension user interface |
+| TypeScript | Frontend application code |
+| Vite | Frontend development and build |
 | Node.js | Backend runtime |
 | Express | Backend API |
-| Google Gemini API | AI-powered assistance |
+| Google Gemini API | AI-assisted hints and analysis |
 | Chrome Extension Manifest V3 | Browser integration |
 | Chrome Storage API | Local extension data and learning memory |
-| JavaScript | Content and page-bridge scripts |
+| JavaScript | Content script, page bridge and extension logic |
 
-## Project structure
+## Project layout
 
 ```text
 PatternMind-Ai/
@@ -142,6 +146,8 @@ PatternMind-Ai/
 │   ├── App.css
 │   ├── index.css
 │   └── main.tsx
+├── docs/
+│   └── images/
 ├── content.js
 ├── page-bridge.js
 ├── index.html
@@ -151,7 +157,7 @@ PatternMind-Ai/
 
 ## Run locally
 
-### Requirements
+### Prerequisites
 
 - Node.js and npm
 - Google Chrome
@@ -177,7 +183,7 @@ cd backend
 npm install
 ```
 
-### 4. Configure the API key
+### 4. Add the Gemini API key
 
 Create `backend/.env`:
 
@@ -185,36 +191,47 @@ Create `backend/.env`:
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Keep this file private. Do not commit API keys or other credentials to GitHub.
+Keep this file private. Do not commit API keys or credentials to GitHub.
 
 ### 5. Start the backend
 
-From the `backend` directory, run:
+From the `backend` directory:
 
 ```bash
-node server.js
+node --use-system-ca server.js
 ```
 
 ### 6. Start the frontend
 
-Open another terminal in the project root and run:
+Open a second terminal in the project root:
 
 ```bash
 npm run dev
 ```
 
-### 7. Build and load the extension
+### 7. Build the extension
+
+Open a third terminal in the project root:
 
 ```bash
 npm run build
 ```
 
-Make sure the final unpacked extension directory contains the required `manifest.json`, background script, content script, and page bridge script. Then:
+The unpacked extension folder must contain `manifest.json`, `background.js`, `content.js`, and `page-bridge.js`, alongside the built frontend assets. If your build does not copy the extension files automatically, copy them into `dist`:
+
+```powershell
+Copy-Item ".\extension\manifest.json" ".\dist\manifest.json" -Force
+Copy-Item ".\extension\background.js" ".\dist\background.js" -Force
+Copy-Item ".\content.js" ".\dist\content.js" -Force
+Copy-Item ".\page-bridge.js" ".\dist\page-bridge.js" -Force
+```
+
+### 8. Load it in Chrome
 
 1. Open `chrome://extensions/`.
-2. Enable **Developer mode**.
-3. Select **Load unpacked**.
-4. Choose the prepared extension directory.
+2. Turn on **Developer mode**.
+3. Click **Load unpacked**.
+4. Select the project's `dist` folder.
 5. Open LeetCode and launch PatternMind AI.
 
 ## Development roadmap
@@ -223,26 +240,31 @@ Make sure the final unpacked extension directory contains the required `manifest
 - [x] Node.js and Express backend
 - [x] Gemini API integration
 - [x] LeetCode problem detection
-- [x] Progressive hint framework
-- [x] Logic-analysis feature
-- [x] Learning-memory framework
-- [ ] Verify LeetCode Practice History synchronization end-to-end
+- [x] Progressive hint interface
+- [x] Logic-analysis interface
+- [x] Learning-memory interface
+- [ ] Verify LeetCode Practice History synchronization end to end
+- [ ] Improve AI response formatting in the extension
 - [ ] Add learning analytics and progress insights
-- [ ] Improve algorithm-pattern recognition
+- [ ] Expand algorithm-pattern recognition
 - [ ] Explore support for additional coding platforms
 
-## Project details
+## The idea
 
-**Project:** PatternMind AI  
-**Category:** AI developer tool / Chrome extension  
-**AI integration:** Google Gemini API  
-**Developer:** Kritika Grover  
-**GitHub:** [@kritika12-source](https://github.com/kritika12-source)  
-**Repository:** [PatternMind-Ai](https://github.com/kritika12-source/PatternMind-Ai)
+A useful coding mentor does not always give you the answer. Sometimes the most valuable help is a small hint, a clear explanation of a mistake, or a question that makes you rethink your approach.
+
+**PatternMind AI is built around that idea: help learners become better problem solvers, one problem at a time.**
 
 ---
 
-<p align="center">
-  <strong>PatternMind AI</strong><br>
-  Think Better. Debug Smarter. Solve Independently.
-</p>
+<div align="center">
+
+**PatternMind AI**
+
+*Think Better · Debug Smarter · Solve Independently*
+
+Developed by **Kritika Grover**
+
+[GitHub Profile](https://github.com/kritika12-source) · [Project Repository](https://github.com/kritika12-source/PatternMind-Ai)
+
+</div>
