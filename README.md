@@ -6,7 +6,7 @@
 
 **Think Better · Debug Smarter · Solve Independently**
 
-<img src="docs/images/01-patternmind-banner.png" alt="PatternMind AI banner" width="100%">
+<img src="docs/images/Screenshot%202026-11-14%20230639.png"  alt="PatternMind AI banner" width="100%">
 
 <p>
   An AI-powered Chrome extension that helps learners reason through LeetCode problems,
