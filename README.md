@@ -47,7 +47,7 @@ The focus is guided learning: hints are delivered progressively, code can be rev
 The extension displays the detected problem, current code, and actions for requesting a hint or analysing logic.
 
 <p align="center">
-  <img src="docs/images/02-extension-dashboard-and-hint.png" alt="PatternMind AI extension showing current code, hint and logic analysis" width="390">
+  <img src="docs/images/Screenshot%202026-11-14%20230639.png"  alt="PatternMind AI extension showing current code, hint and logic analysis" width="390">
 </p>
 
 ### Logic analysis
@@ -55,11 +55,11 @@ The extension displays the detected problem, current code, and actions for reque
 The following captures show the execution trace and explanation sections produced by the logic-analysis experience.
 
 <p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230639.png" alt="Logic analysis execution trace" width="390">
+  <img src="docs/images/Screenshot%202026-11-14%20230832.png" alt="Logic analysis execution trace" width="390">
 </p>
 
 <p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230832.png" alt="Logic analysis explanation and thinking question" width="390">
+  <img src="docs/images/Screenshot%202026-11-14%20230843.png"  alt="Logic analysis explanation and thinking question" width="390">
 </p>
 
 ### Progressive hints
@@ -69,19 +69,19 @@ Hints are designed to reveal guidance in stages, helping the learner keep owners
 **Hint Level 1 — Where should I look?**
 
 <p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230843.png" alt="PatternMind AI Hint Level 1" width="390">
+  <img src="docs/images/Screenshot%202026-11-14%20230916.png"  alt="PatternMind AI Hint Level 1" width="390">
 </p>
 
 **Hint Level 2 — What concept should I think about?**
 
 <p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230916.png" alt="PatternMind AI Hint Level 2" width="390">
+  <img src="docs/images/Screenshot%202026-11-14%20230946.png" alt="PatternMind AI Hint Level 2" width="390">
 </p>
 
 **Hint Level 5 — Small code help**
 
 <p align="center">
-  <img src="C:\Users\k3475\OneDrive\Ai chrome extension\docs\images\Screenshot 2026-11-14 230946.png" alt="PatternMind AI Hint Level 5" width="390">
+  <img src="docs/images/Screenshot%202026-11-14%20231137.png" alt="PatternMind AI Hint Level 5" width="390">
 </p>
 
 > These are screenshots from the current development build. AI analysis and hint quality depend on the submitted problem and code; outputs should be reviewed as part of testing.
